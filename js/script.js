@@ -1,4 +1,15 @@
+//=========================================================================================
+//Index script
+//=========================================================================================
 console.log("hello world")
+
+$("#search-button").on("click", function(event) {
+    event.preventDefault()
+    var searchString = $("#searchfield").val().trim();
+    console.log(searchString)
+})
+
+console.log("Never Give up, yo!")
 
 API = "AIzaSyChwdYAov09eDIzPKMuNd"
 
@@ -10,3 +21,8 @@ $.ajax({
 }).then(function (response) {
     console.log(response)
 })
+
+
+//=========================================================================================
+//Mediaplayer script
+//=========================================================================================
