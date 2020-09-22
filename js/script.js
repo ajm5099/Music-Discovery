@@ -9,7 +9,6 @@ $("#search-button").on("click", function(event) {
     console.log(searchString)
 })
 
-<<<<<<< HEAD
 console.log("Never Give up, yo!")
 
 API = "AIzaSyChwdYAov09eDIzPKMuNd"
@@ -22,8 +21,6 @@ $.ajax({
 }).then(function (response) {
     console.log(response)
 })
-=======
->>>>>>> Development
 
 
 //=========================================================================================
