@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 //=========================================================================================
 //Index script
 //=========================================================================================
@@ -10,11 +9,20 @@ $("#search-button").on("click", function(event) {
     console.log(searchString)
 })
 
+console.log("Never Give up, yo!")
+
+API = "AIzaSyChwdYAov09eDIzPKMuNd"
+
+
+
+$.ajax({
+    url: "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&q=concert+Modest+Mouse&key="+ API +"-Aux-Il6N6alI",    
+    method: "GET"
+}).then(function (response) {
+    console.log(response)
+})
 
 
 //=========================================================================================
 //Mediaplayer script
 //=========================================================================================
-=======
-console.log("hello world")
->>>>>>> Development
