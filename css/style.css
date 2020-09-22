@@ -1,0 +1,15 @@
+body {
+    background-color: goldenrod;
+}
+
+.search {
+    width: 40vw;
+    margin: auto;
+    background-color: grey;
+}
+
+.searchfield {
+    color: black;
+    font-size: 18px;
+    width: 40vw;
+}
