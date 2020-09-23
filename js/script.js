@@ -31,13 +31,24 @@ function getData(searchString) {
 
 }
 
+function transitionToMedia() {
+    var splash = document.querySelector(".splash-page");
+    splash.style.display = "none";
+    var mediaLocal = document.querySelector(".media-page");
+    mediaLocal.style.display = "block";
+}
+
+$(document).ready(function(){
+    $('.sidenav').sidenav();
+});
 
 //events
 
 $("#search-button").on("click", function (event) {
-    
+    event.preventDefault();
     var searchString = $("#searchfield").val().trim();
     console.log(searchString)
+    transitionToMedia();
     getData(searchString);
 })
 

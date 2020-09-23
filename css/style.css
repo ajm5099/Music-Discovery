@@ -2,6 +2,15 @@ body {
     background-color: goldenrod;
 }
 
+.red .nav-wrapper{
+    background-color:gray;
+
+}
+
+a:hover{
+    color: springgreen;
+}
+
 .search {
     width: 40vw;
     margin: auto;
@@ -12,4 +21,12 @@ body {
     color: black;
     font-size: 18px;
     width: 40vw;
+}
+
+#artist-name {
+    font-size: 2.3vw;
+    text-align: center;
+}
+#artist-description {
+    font-size: 1.2vw;
 }
