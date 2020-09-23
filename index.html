@@ -33,17 +33,24 @@
 
 
     <!-- I need a label, an input, and a button -->
-<div class="splash-page">
-    <div class="search">
-        <form id="search-form">
-            <label for="searchfield" class="searchfield">Search</label>
-            <input type="text" id="searchfield" name="searchfield">
-            <a class="waves-effect waves-light btn" id="search-button">Search</a>
-        </form>
-    </div>
+<!-- Homepage hero image and search box -->
+<div class="container splash-page" id="search-hero">
+    <div class="iris valign-wrapper center-align">
+        <div class= "card transparent z-depth-5" id="search-box">
 
+            <div class=" search">
+                <form id="search-form">
+                    <label for="searchfield" class="center-align valign-wrapper searchfield" id="searchfield">Search for your favorite artist</label>
+                    <input type="text" id="searchfield" name="searchfield">
+                    <a href="./mediaplayer.html" class="waves-effect waves-light btn" id="search-button">Search</a>
+                </form>
+            </div>
+
+        </div>
+    </div>
 </div>
 
+ <!-- Media player and artist information card -->
 <div class="media-page" style="display: none;">
     <div class="container" id="player-container">
         <div class="row">

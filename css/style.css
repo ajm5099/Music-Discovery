@@ -2,7 +2,29 @@ body {
     background-color: goldenrod;
 }
 
-<<<<<<< HEAD
+.search {
+    width: 20vw;
+    margin: auto;
+    background-color: rgba(231, 230, 230, 0.5);
+}
+
+.searchfield {
+    color: black;
+    font-size: 18px;
+    width: 40vw;
+}
+
+.iris {
+    background-image: url("https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,h_750,q_75,w_1600/v1/clients/newbraunfelstx/2_98d49d5a-8227-4611-905a-e6981b9e9599.jpg");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+}
+
+#artist-description {
+    font-size: 1.2vw;
+}
+
 #artist-name {
     font-size: 2.3vw;
     text-align: center;
@@ -19,41 +41,9 @@ body {
 
 #search-box {
     margin: auto;
-=======
-.red .nav-wrapper{
-    background-color:gray;
-
 }
 
-a:hover{
-    color: springgreen;
->>>>>>> Development
-}
-
-.search {
-    width: 20vw;
-    margin: auto;
-    background-color: rgba(231, 230, 230, 0.5);
-}
-
-.searchfield {
-    color: black;
-    font-size: 18px;
-    width: 40vw;
-}
-
-<<<<<<< HEAD
-.iris {
-    background-image: url("https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,h_750,q_75,w_1600/v1/clients/newbraunfelstx/2_98d49d5a-8227-4611-905a-e6981b9e9599.jpg");
-    background-repeat: no-repeat;
-    height: 100vh;
-    background-size: cover;
-=======
 #artist-name {
     font-size: 2.3vw;
     text-align: center;
-}
-#artist-description {
-    font-size: 1.2vw;
->>>>>>> Development
 }
