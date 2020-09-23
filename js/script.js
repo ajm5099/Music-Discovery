@@ -7,9 +7,15 @@ console.log(window.location.href)
 //variables
 console.log("hello world");
 var API = "AIzaSyChwdYAov09eDIzPKMuNd";
-var localBand = localStorage.getItem("band")
-console.log(localBand)
-
+var artistName;
+var artistYear;
+var artistBio;
+var videoId;
+var videoTitle;
+var artistFB;
+var artistTwit;
+var artistWebpage;
+var artistGenre;
 
 
 //functions
@@ -17,16 +23,23 @@ console.log(localBand)
 function getData(searchString) {
 
     $.ajax({
-        url: `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&q=${searchString}+Modest+Mouse&key=${API}-Aux-Il6N6alI`,
+        url: `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&q=concert${searchString}&key=${API}-Aux-Il6N6alI`,
         method: "GET"
-    }).then(function (response) {
-
-        console.log(response)
+    }).then(function (responseVideo) {
+        console.log(responseVideo.items[0].id.videoId)
+        videoId = responseVideo.items[0].id.videoId
+        var videoPlay = `https://www.youtube.com/embed/${videoId}`
+        $("#live-feed").attr("src", videoPlay)
+        console.log(responseVideo)
+        
         $.ajax({
             url: `https://www.theaudiodb.com/api/v1/json/1/search.php?s=${searchString}`,
             method: "GET"
         }).then(function (responseDescription) {
             console.log(responseDescription)
+            artistBio = responseDescription.artists[0].strBiographyEN
+            
+            console.log(artistBio)
         })
 
 
@@ -49,7 +62,7 @@ $(document).ready(function(){
 
 $("#search-button").on("click", function (event) {
     event.preventDefault();
-    var searchString = $("#searchfield").val().trim();
+    var searchString = $("#searchBox").val().trim();
     console.log(searchString)
     transitionToMedia();
     getData(searchString);
