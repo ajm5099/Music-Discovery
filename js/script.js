@@ -14,20 +14,45 @@ console.log(localBand)
 
 //functions
 
-// TODO: add timer and .then to create time between function call and search function to allow time to populate local var
+function getData(searchString) {
+
+    $.ajax({
+        url: `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&q=${searchString}+Modest+Mouse&key=${API}-Aux-Il6N6alI`,
+        method: "GET"
+    }).then(function (response) {
+
+        console.log(response)
+        $.ajax({
+            url: `https://www.theaudiodb.com/api/v1/json/1/search.php?s=${searchString}`,
+            method: "GET"
+        }).then(function (responseDescription) {
+            console.log(responseDescription)
+        })
+
+
+    })
+
+}
+
+function transitionToMedia() {
+    var splash = document.querySelector(".splash-page");
+    splash.style.display = "none";
+    var mediaLocal = document.querySelector(".media-page");
+    mediaLocal.style.display = "block";
+}
+
+$(document).ready(function(){
+    $('.sidenav').sidenav();
+});
 
 //events
 
-$(".search-button").on("click", function (event) {
-    event.preventDefault()
+$("#search-button").on("click", function (event) {
+    event.preventDefault();
     var searchString = $("#searchfield").val().trim();
     console.log(searchString)
-    localStorage.setItem("band", searchString)
-    setTimeout(function(){ window.location.href = "./mediaplayer.html" }, 500);
-    // window.location.href = "./mediaplayer.html"
-    
-
-    // getData(searchString);
+    transitionToMedia();
+    getData(searchString);
 })
 
 //=========================================================================================

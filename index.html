@@ -9,16 +9,67 @@
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    
-    <!-- I need a label, an input, and a button -->
+    <nav class="red">
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Music Discovery</a>
+            <a href="#" class="sidenav-trigger" data-target="mobile-nav">
+                <i class="material-icons">Menu</i>
+            </a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="sass.html">Live Music</a></li>
+                <li><a href="badges.html">Artist Bio</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+                <li><a href="contacts.html">More</a></li>
+            </ul>
+        </div>
+    </nav>
 
+    <ul class="sidenav" id="mobile-nav">
+        <li><a href="sass.html">Live Music</a></li>
+        <li><a href="badges.html">Artist Bio</a></li>
+        <li><a href="contacts.html">Contacts</a></li>
+        <li><a href="contacts.html">More</a></li>
+    </ul>
+
+
+    <!-- I need a label, an input, and a button -->
+<div class="splash-page">
     <div class="search">
         <form id="search-form">
             <label for="searchfield" class="searchfield">Search</label>
             <input type="text" id="searchfield" name="searchfield">
-            <a href="./mediaplayer.html" class="waves-effect waves-light btn search-button">Search</a>
+            <a class="waves-effect waves-light btn" id="search-button">Search</a>
         </form>
     </div>
+
+</div>
+
+<div class="media-page" style="display: none;">
+    <div class="container" id="player-container">
+        <div class="row">
+            <div class="card-panel #E53935 red darken-1 col s3" id="artist-panel">
+                <h1 id="artist-name">Artist Name</h1>
+                <p class="flow-text" id="artist-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Sed ac diam sodales, laoreet tortor in, luctus neque. Aenean sodales quis neque id aliquet. Donec
+                    luctus pulvinar interdum. Pellentesque at vehicula libero. Duis imperdiet volutpat nisl sit amet
+                    luctus. Curabitur quis ipsum mauris. Aenean a arcu a metus accumsan accumsan eget ut tortor. In et
+                    quam eget nulla gravida ornare ac non diam. Ut dignissim volutpat mi quis consequat.</p>
+                <a href="" id="" style="font-size: 1.2vw">Spotify</a>
+                <a href="" id="">Bandcamp</a>
+            </div>
+            <div class="col s9">
+                <div class="video-holder">
+                    <iframe id="live-feed" width="560" height="315" src="https://www.youtube.com/embed/wosMXEWlWgE"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
