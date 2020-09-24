@@ -20,7 +20,20 @@ body {
     height: 100vh;
     background-size: cover;
 }
-
+.blink{
+    text-transform: translate(-50%, -50%);
+}
+.blink > span{
+    font-weight: bold;
+    animation: blink 3s linear infinite;
+    color: rgb(235, 16, 151);
+    font-size: xx-large;
+}
+@keyframes blink{
+    0%{opacity: 0;}
+    50%{opacity: 0.5;}
+    100%{opacity: 1;}
+}
 .container2{
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
