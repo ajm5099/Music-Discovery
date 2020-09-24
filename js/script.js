@@ -12,10 +12,12 @@ var artistYear;
 var artistBio;
 var videoId;
 var videoTitle;
-var artistFB;
+var artistStyle;
+var artistGenre;
+var artistMood;
 var artistTwit;
 var artistWebpage;
-var artistGenre;
+
 
 
 //functions
@@ -37,9 +39,11 @@ function getData(searchString) {
             method: "GET"
         }).then(function (responseDescription) {
             console.log(responseDescription)
-            artistBio = responseDescription.artists[0].strBiographyEN
-            
+                       
+            $("#artist-description").text(responseDescription.artists[0].strBiographyEN)
+            $("#artist-name").text(responseDescription.artists[0].strArtist)
             console.log(artistBio)
+            
         })
 
 
