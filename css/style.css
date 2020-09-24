@@ -91,3 +91,13 @@ body {
     padding-right: .5vw;
     margin: .5vw .3vw .5vw .3vw
 }
+
+#trouble-video-text {
+    font-size: 1vw;
+    width: 17vw;
+}
+
+#trouble-video-button {
+    margin-top: .8vw;
+    font-size: 1vw;
+}
