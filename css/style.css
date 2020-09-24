@@ -21,6 +21,12 @@ body {
     background-size: cover;
 }
 
+.container2{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    border: 1px green solid;
+}
+
 #artist-description {
     font-size: 1.2vw;
 }
