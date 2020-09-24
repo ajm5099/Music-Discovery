@@ -1,3 +1,9 @@
+h1 {
+    font-size: 3vw;
+    margin-top: .5vw;
+    margin-bottom: .5vw;
+}
+
 body {
     background-color: goldenrod;
 }
@@ -40,6 +46,14 @@ body {
     border: 1px green solid;
 }
 
+.genre-button {
+    color: orange;
+    width: auto;
+    margin-top: .5vw;
+    margin-left: 4vw !important;
+
+}
+
 #artist-description {
     font-size: 1.2vw;
 }
@@ -65,4 +79,15 @@ body {
 #artist-name {
     font-size: 2.3vw;
     text-align: center;
+}
+
+#quick-search {
+    color: orange;
+    background-color: green;
+    border-radius: 5px;
+    padding-top: .3vw;
+    padding-bottom: .3vw;
+    padding-left: .5vw;
+    padding-right: .5vw;
+    margin: .5vw .3vw .5vw .3vw
 }
