@@ -2,22 +2,35 @@ h1 {
     font-size: 3vw;
     margin-top: .5vw;
     margin-bottom: .5vw;
+    color: #c7493a
 }
 
 body {
-    background-color: goldenrod;
+    background-color: #272727;
+}
+
+nav {
+    background-color: #a33327;
+}
+
+nav .brand-logo {
+    color: #f6f5f5;
 }
 
 .search {
     width: 20vw;
     margin: auto;
-    background-color: rgba(231, 230, 230, 0.5);
+    padding: .5vw;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 1vw;
 }
 
 .searchfield {
-    color: black;
-    font-size: 18px;
-    width: 40vw;
+    color: #c7493a;
+    font-size: 24px;
+    width: 20vw;
+    font-weight: bold;
+    margin: .5vw;
 }
 
 .iris {
@@ -32,7 +45,7 @@ body {
 .blink > span{
     font-weight: bold;
     animation: blink 3s linear infinite;
-    color: rgb(235, 16, 151);
+    color: #ee6f57;
     font-size: xx-large;
 }
 @keyframes blink{
@@ -40,22 +53,28 @@ body {
     50%{opacity: 0.5;}
     100%{opacity: 1;}
 }
-.container2{
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    border: 1px green solid;
+
+.card-content {
+    background-color: #000000;
+    color: #f6f5f5;
+}
+
+.card-panel {
+    background-color: #000000;
+    color: #f6f5f5;
+}
+
+.card-action-link {
+    color: #c7493a !important;
+    padding-left: 0vw !important;
 }
 
 .genre-button {
-    color: orange;
+    color: #c7493a;
+    background-color: #000000;
     width: auto;
     margin-top: .5vw;
     margin-left: 4vw !important;
-
-}
-
-#artist-description {
-    font-size: 1.2vw;
 }
 
 #artist-name {
@@ -73,7 +92,14 @@ body {
 }
 
 #search-box {
+    margin-left: 0vw;
     margin: auto;
+}
+
+#search-button {
+    margin: 1vw;
+    color: #c7493a;
+    background-color: #145374;
 }
 
 #artist-name {
@@ -100,4 +126,8 @@ body {
 #trouble-video-button {
     margin-top: .8vw;
     font-size: 1vw;
+}
+
+#searchBox {
+    color: white;
 }
