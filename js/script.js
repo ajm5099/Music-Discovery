@@ -22,6 +22,85 @@ var artistMood;
 var artistTwit;
 var artistWebpage;
 
+// Rock Bands for the Rock Genre button
+var rockBands = [{
+    videoId: "2cZ_EFAmj08",
+    artistId: "Heart"
+}, {
+    videoId: "7uAUoz7jimg",
+    artistId: "Chicago"
+}]
+
+var electronicBands = [{
+    videoId: "n_LcVqqHSY8",
+    artistId: "Lane 8"
+}, {
+    videoId: "Xl6w3EJR4tI",
+    artistId: "REZZ"
+}, {
+    videoId: "pRdU63U-MyM",
+    artistId: "Seven Lions"
+}, {
+    videoId: "QcQXUqSwSmQ",
+    artistId: "Infected Mushroom"
+}]
+
+// Jazz Bands for the Jazz Genre Button
+var jazzBands = [{
+    videoId: "i8q6sR6yZCE",
+    artistId: "Weather Report"
+}, {
+    videoId: "qQ__lmCOSeg",
+    artistId: "Wynton Marsalis"
+}, {
+    videoId: "GOKlGlt0Ygg",
+    artistId: "grover washington"
+}]
+
+// Classical Pieces for the Classical Button
+var classicalBands = [{
+    videoId: "jVDofBFtvwA",
+    artistId: "Dvorak"
+}, {
+    videoId: "jv2WJMVPQi8",
+    artistId: "Beethoven"
+}, {
+    videoId: "PSuRJueqsQg",
+    artistId: "Wagner"
+}]
+
+// Metal Acts for the Metal Genre Button
+var metalBands = [{
+    videoId: "SHAQhxuV960",
+    artistId: "Sepultura"
+}, {
+    videoId: "2BEOdXii_10",
+    artistId: "Megadeth"
+}]
+
+// Hip hop acts for the Hip hop button
+var hiphopBands = [{
+    videoId: "amhC8WYgNA4",
+    artistId: "Lil Nas X"
+}, {
+    videoId: "m0CB1q8CKoU",
+    artistId: "Khruangbin"
+}]
+
+// Video Game Music Performances for the Video Game Genre Button
+var videogameBands = [{
+    videoId: "nMLkrTJ9BZI",
+    artistId: "Martin O'Donnell"
+}, {
+    videoId: "f1Dj8W1DOBE",
+    artistId: "Koji Kondo"
+}, {
+    videoId: "5a9E3n_VZRQ",
+    artistId: "Mick Gordon"
+}, {
+    videoId: "RKHBgPAhYvg",
+    artistId: "Nobuo Uematsu"
+}]
 
 
 //functions
@@ -67,6 +146,49 @@ function getData(searchString) {
 
 }
 
+// Used for the Genre Button to generate information
+function getDataById(artistId) {
+
+    $.ajax({
+        url: `https://www.theaudiodb.com/api/v1/json/1/search.php?s=${artistId}`,
+        method: "GET"
+    }).then(function (genreButtonResponse) {
+        console.log(genreButtonResponse)
+        var artistName = genreButtonResponse.artists[0].strArtist
+        var artistYear = genreButtonResponse.artists[0].intFormedYear
+        var artistBio = genreButtonResponse.artists[0].strBiographyEN
+        var artistStyle = genreButtonResponse.artists[0].strStyle
+        var artistGenre = genreButtonResponse.artists[0].strGenre
+        var artistMood = genreButtonResponse.artists[0].strMood
+
+        $("#artist-bio").text(genreButtonResponse.artists[0].strBiographyEN)
+        $("#artist-name").text(artistName)
+        $("#artist-style").text("Style: " + artistStyle)
+        $("#artist-mood").text("Mood: " + artistMood)
+        $("#artist-yearformed").text("Year Formed: " + artistYear)
+        $("#artist-genre").text("Genre: " + artistGenre)
+        $("#artist-website").text(genreButtonResponse.artists[0].strWebsite)
+        $("#artist-twitter").text(genreButtonResponse.artists[0].strTwitter)
+    });
+}
+
+function genreCall(genreBands){
+    // Set variables for passing to ajax
+    var genreIndex = Math.floor(Math.random() * genreBands.length);
+    var searchGenreIdVideo = genreBands[genreIndex].videoId
+    var searchGenreIdArtist = genreBands[genreIndex].artistId
+    console.log(searchGenreIdVideo);
+    console.log(searchGenreIdArtist);
+    // Pass to ajax and transition
+    transitionToMedia();
+    var genrePlay = `https://www.youtube.com/embed/${searchGenreIdVideo}`
+    $("#live-feed").attr("src", genrePlay)
+    // Add href to trouble with video button
+    var genreProblem = `https://www.youtube.com/watch?v=${searchGenreIdVideo}`
+    $("#trouble-video-button").attr("href", genreProblem);
+    getDataById(searchGenreIdArtist);
+}
+
 function transitionToMedia() {
     var splash = document.querySelector(".splash-page");
     splash.style.display = "none";
@@ -86,6 +208,54 @@ $("#search-button").on("click", function (event) {
     console.log(searchString)
     transitionToMedia();
     getData(searchString);
+})
+
+// Event listener for the Rock Button
+$("#Rock-button").on("click", function (event) {
+    event.preventDefault();
+    genreCall(rockBands);
+})
+
+// Event listener for the Electronic Button
+$("#Electronic-button").on("click", function (event) {
+    event.preventDefault();
+    genreCall(electronicBands);
+})
+
+// Event listener for the Jazz Button
+$("#Jazz-button").on("click", function (event) {
+    event.preventDefault();
+    genreCall(jazzBands);
+})
+
+// Event listener for the Classical Button
+$("#Classical-button").on("click", function (event) {
+    event.preventDefault();
+    genreCall(classicalBands);
+})
+
+// Event listener for the Metal Button
+$("#Metal-button").on("click", function (event) {
+    event.preventDefault();
+    genreCall(metalBands);
+})
+
+// Event listener for the Hip Hop Button
+$("#Hip-Hop-button").on("click", function (event) {
+    event.preventDefault();
+    genreCall(hiphopBands);
+})
+
+// Event listener for the Video Game Button
+$("#Video-Game-button").on("click", function (event) {
+    event.preventDefault();
+    genreCall(videogameBands);
+})
+
+// Trouble Video Functionality (Need to Add $("#trouble-video-button").attr("href", videogameProblem); to search function)
+$("#trouble-video-button").on("click", function (event) {
+    event.preventDefault();
+    window.location.href = $(this).attr("href")
 })
 
 //=========================================================================================
