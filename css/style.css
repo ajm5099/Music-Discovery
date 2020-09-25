@@ -61,7 +61,8 @@ nav .brand-logo {
 .card-content {
     background-color: #000000;
     color: #f6f5f5;
-    height: 13vw;
+    height: auto;
+    min-height: 24vh;
 }
 
 .card-panel {
@@ -70,7 +71,8 @@ nav .brand-logo {
 }
 
 .card-description {
-    height: 5vw;
+    height: auto;
+    font-size: 1.5vw;
 }
 
 .card-action-link {
