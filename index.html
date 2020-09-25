@@ -11,27 +11,27 @@
 </head>
 
 <body>
-    <nav class="red">
+    <nav>
         <div class="nav-wrapper">
-            <a href="#" class="brand-logo">Music Discovery</a>
+            <a href="#" class="brand-logo">VenU</a>
             <a href="#" class="sidenav-trigger" data-target="mobile-nav">
                 <i class="material-icons">Menu</i>
             </a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <!-- <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="sass.html">Live Music</a></li>
                 <li><a href="badges.html">Artist Bio</a></li>
                 <li><a href="contacts.html">Contacts</a></li>
                 <li><a href="contacts.html">More</a></li>
-            </ul>
+            </ul> -->
         </div>
     </nav>
 
-    <ul class="sidenav" id="mobile-nav">
+    <!-- <ul class="sidenav" id="mobile-nav">
         <li><a href="sass.html">Live Music</a></li>
         <li><a href="badges.html">Artist Bio</a></li>
         <li><a href="contacts.html">Contacts</a></li>
         <li><a href="contacts.html">More</a></li>
-    </ul>
+    </ul> -->
 
 
     <!-- I need a label, an input, and a button -->
@@ -39,7 +39,6 @@
     <div class="container splash-page" id="search-hero">
         <div class="iris valign-wrapper center-align">
             <div class="card transparent z-depth-5" id="search-box">
-
                 <div class=" search">
                     <form id="search-form">
                         <label for="searchfield" class="center-align valign-wrapper searchfield">Search for your
@@ -61,11 +60,11 @@
                     <div class="card-image">
                         <img src="images/c37e9119-9fcf-40b6-b465-4cc6306548fb.jpg" alt="">
                     </div>
-                    <div class="card-content">
+                    <div class="card-content z-depth-3">
                         <span class="card-title">Yung Bae</span>
                         <p>Lorem ipsum dolor sit amet co praesentium, libero recusandae dolores be iusto!</p>
                         <div class="card-action">
-                            <a href="">Stream Now</a>
+                            <a href="" class="card-action-link">Stream Now</a>
                         </div>
                     </div>
                 </div>
@@ -75,11 +74,11 @@
                     <div class="card-image">
                         <img src="images/c37e9119-9fcf-40b6-b465-4cc6306548fb.jpg" alt="">
                     </div>
-                    <div class="card-content">
+                    <div class="card-content z-depth-3">
                         <span class="card-title">Yung Bae</span>
                         <p>Lorem ipsum dolor sit amet co praesentium, libero recusandae dolores be iusto!</p>
                         <div class="card-action">
-                            <a href="">Stream Now</a>
+                            <a href="" class="card-action-link">Stream Now</a>
                         </div>
                     </div>
                 </div>
@@ -89,11 +88,11 @@
                     <div class="card-image">
                         <img src="images/c37e9119-9fcf-40b6-b465-4cc6306548fb.jpg" alt="">
                     </div>
-                    <div class="card-content">
+                    <div class="card-content z-depth-3">
                         <span class="card-title">Yung Bae</span>
                         <p>Lorem ipsum dolor sit amet co praesentium, libero recusandae dolores be iusto!</p>
                         <div class="card-action">
-                            <a href="">Stream Now</a>
+                            <a href="" class="card-action-link">Stream Now</a>
                         </div>
                     </div>
                 </div>
@@ -103,11 +102,11 @@
                     <div class="card-image">
                         <img src="images/c37e9119-9fcf-40b6-b465-4cc6306548fb.jpg" alt="">
                     </div>
-                    <div class="card-content">
+                    <div class="card-content z-depth-3">
                         <span class="card-title">Yung Bae</span>
                         <p>Lorem ipsum dolor sit amet co praesentium, libero recusandae dolores be iusto!</p>
                         <div class="card-action">
-                            <a href="">Stream Now</a>
+                            <a href="" class="card-action-link">Stream Now</a>
                         </div>
                     </div>
                 </div>
@@ -139,7 +138,7 @@
     <div class="media-page" style="display: none;">
         <div class="container" id="player-container">
             <div class="row">
-                <div class="card-panel #E53935 red darken-1 col s3" id="artist-panel">
+                <div class="card-panel col s3 z-depth-3" id="artist-panel">
                     <h1 id="artist-name">Artist Name</h1>
                     <p class="flow-text" id="artist-yearformed">Lorem ipsum dolor sit amet </p>
                     <p class="flow-text" id="artist-style">Lorem ipsum dolor sit amet </p>
@@ -151,7 +150,7 @@
                 </div>
                 <div class="col s9">
                     <div class="video-container">
-                        <iframe id="live-feed" src="#" frameborder="0"
+                        <iframe id="live-feed" src="" frameborder="0"
                             allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
                     </div>
@@ -161,15 +160,15 @@
                 <div class="container s12" id="video-link">
                     <div class="row">
                         <p class="col s5 flow-text" id="trouble-video-text">Having trouble playing the video?</p>
-                        <a class="btn-small col s2" id="trouble-video-button">Click here</a>
+                        <a class="btn-small col s2 genre-button" id="trouble-video-button">Click here</a>
                     </div>
                 </div>
 
             </div>
             <div class="row">
-                <div class="card-panel #E53935 red darken-1 col s12" id="artist-cardbio">
+                <div class="card-panel #E53935 col s12" id="artist-cardbio">
                     <h2 id="artist-headerbio">Biography: </h2>
-                    <p class="flow-text" id="artist-bio">Who moved my cheese queso danish fontina. Cottage cheese goat
+                    <p class="flow-text z-depth-3" id="artist-bio">Who moved my cheese queso danish fontina. Cottage cheese goat
                         paneer jarlsberg melted cheese ricotta caerphilly stinking bishop. Monterey jack st. agur blue
                         cheese paneer dolcelatte cut the cheese cauliflower cheese camembert de normandie goat. Pecorino
                         cheddar queso swiss everyone loves cow melted cheese blue castello. Mozzarella.
@@ -198,12 +197,12 @@
                     <div class="card-image">
                         <img src="images/c37e9119-9fcf-40b6-b465-4cc6306548fb.jpg" alt="">
                     </div>
-                    <div class="card-content">
+                    <div class="card-content z-depth-3">
                         <span class="card-title">Yung Bae</span>
                         <p>Lorem ipsum dolor sit amet co praesentium, libero recusandae dolores be
                             iusto!</p>
                         <div class="card-action">
-                            <a href="">Watch Now</a>
+                            <a href="" class="card-action-link">Watch Now</a>
                         </div>
                     </div>
                 </div>
@@ -213,12 +212,12 @@
                     <div class="card-image">
                         <img src="images/c37e9119-9fcf-40b6-b465-4cc6306548fb.jpg" alt="">
                     </div>
-                    <div class="card-content">
+                    <div class="card-content z-depth-3">
                         <span class="card-title">Yung Bae</span>
                         <p>Lorem ipsum dolor sit amet co praesentium, libero recusandae dolores be
                             iusto!</p>
                         <div class="card-action">
-                            <a href="">Watch Now</a>
+                            <a href="" class="card-action-link">Watch Now</a>
                         </div>
                     </div>
                 </div>
@@ -228,12 +227,12 @@
                     <div class="card-image">
                         <img src="images/c37e9119-9fcf-40b6-b465-4cc6306548fb.jpg" alt="">
                     </div>
-                    <div class="card-content">
+                    <div class="card-content z-depth-3">
                         <span class="card-title">Yung Bae</span>
                         <p>Lorem ipsum dolor sit amet co praesentium, libero recusandae dolores be
                             iusto!</p>
                         <div class="card-action">
-                            <a href="">Watch Now</a>
+                            <a href="" class="card-action-link">Watch Now</a>
                         </div>
                     </div>
                 </div>
@@ -243,12 +242,12 @@
                     <div class="card-image">
                         <img src="images/c37e9119-9fcf-40b6-b465-4cc6306548fb.jpg" alt="">
                     </div>
-                    <div class="card-content">
+                    <div class="card-content z-depth-3">
                         <span class="card-title">Yung Bae</span>
                         <p>Lorem ipsum dolor sit amet co praesentium, libero recusandae dolores be
                             iusto!</p>
                         <div class="card-action">
-                            <a href="">Watch Now</a>
+                            <a href="" class="card-action-link">Watch Now</a>
                         </div>
                     </div>
                 </div>
