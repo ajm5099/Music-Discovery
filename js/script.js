@@ -22,6 +22,72 @@ var artistMood;
 var artistTwit;
 var artistWebpage;
 
+// Live now 24/7 Stations
+var twentyFour = [
+    {
+        tfVideoId: "JEK03 - EzyHk",
+        tfTitle: "REVERE",
+        tfDescription: "REVERE - 24/7 Worship - Live Stream",
+        tfThumbnail: "https://i.ytimg.com/vi/JEK03-EzyHk/hqdefault_live.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBBV6DUvjQubffzaiN1omqyNr67fg",
+        tfAlt: "Religious Congregation"
+    }, {
+        tfVideoId: "u6kdx - Q61l0",
+        tfTitle: "Lewis Bennett",
+        tfDescription: "Roots Reggae Radio - 24/7 Reggae Music",
+        tfThumbnail: "https://i.ytimg.com/vi/u6kdx-Q61l0/hqdefault_live.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLD6c5KADmWxznv8J-LPSEPM_QxXKA",
+        tfAlt: "Boom Box"
+    }, {
+        tfVideoId: "5qap5aO4i9A",
+        tfTitle: "ChilledCow",
+        tfDescription: "Lofi Hip Hop Radio - Beats to relax/study to",
+        tfThumbnail: "https://i.ytimg.com/vi/5qap5aO4i9A/hqdefault_live.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCCh5rH1ek3XyWLbQnM9hZK9m7d2Q",
+        tfAlt: "Student Studying"
+    }, {
+        tfVideoId: "KvRVky0r7YM",
+        tfTitle: "The Grand Sound",
+        tfDescription: "Progressive House · Relaxing Focus Music · 24/7 Live Radio",
+        tfThumbnail: "https://i.ytimg.com/vi/KvRVky0r7YM/hqdefault_live.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBg2cpD0iAhYP8KVAFTgXpIuTIlEQ",
+        tfAlt: "Person watching sun on horizion"
+    }, {
+        tfVideoId: "Ga540v27NpE",
+        tfTitle: "Tomorrowland",
+        tfDescription: "Tomorrowland - One World Radio",
+        tfThumbnail: "https://i.ytimg.com/vi/Ga540v27NpE/hqdefault_live.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAhw4rP4azrpAzTST8cU2k4NrFnxA",
+        tfAlt: "One World Radio"
+    }, {
+        tfVideoId: "xDAcHbpl-F8",
+        tfTitle: "Rap Party",
+        tfDescription: "Gangsta Rap Radio 24/7 Underground Rap & Hip Hop Live Music (Rap Party Radio)",
+        tfThumbnail: "https://i.ytimg.com/vi/xDAcHbpl-F8/hqdefault_live.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBeb3YN9bvlSFflFRJMwvVwZI_hBQ",
+        tfAlt: "Smiling Person in Ski Mask"
+    }, {
+        tfVideoId: "qWf-FPFmVw0",
+        tfTitle: "N&T Party",
+        tfDescription: "Best Shuffle Dance Music 2020 24/7 Live Stream Video Music Best Electro House & Bass Boosted Mix",
+        tfThumbnail: "https://i.ytimg.com/vi/qWf-FPFmVw0/hqdefault_live.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDOmlQMPfhrklcUhzHHsCnTv9dV3g",
+        tfAlt: "Runner with Coloured Smoke"
+    }, {
+        tfVideoId: "U1eGvUPDXWQ",
+        tfTitle: "Live Radio Music",
+        tfDescription: "Best Radio 1 Love Best English Slow Pop Songs 2020 & Romantic Love Songs 80's 90's' Live Radio",
+        tfThumbnail: "https://i.ytimg.com/vi/U1eGvUPDXWQ/hqdefault_live.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAkPNAcrRsvDoiAC2CaIEW24nEBYA",
+        tfAlt: "Best Radio 1 Love"
+    }, {
+        tfVideoId: "6Poonh_ZY4I",
+        tfTitle: "Afterhours",
+        tfDescription: "Afterhours Radio 24/7 Live Radio Best R&B Hip-Hop Pop Chill Tracks chill live stream",
+        tfThumbnail: "https://i.ytimg.com/vi/6Poonh_ZY4I/hqdefault_live.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCAxU2Xx0aBm-0n7w7PkjHl3kE7WQ",
+        tfAlt: "Person resting on grill of car"
+    }, {
+        tfVideoId: "P1k4jGwhKF0",
+        tfTitle: "GameChops",
+        tfDescription: "Video Game Study Lounge",
+        tfThumbnail: "https://i.ytimg.com/vi/P1k4jGwhKF0/hqdefault_live.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAa9GERo6VHqSU-3G391njTK_BOag",
+        tfAlt: "Isabella studying"
+    }
+]
+
+
 // Rock Bands for the Rock Genre button
 var rockBands = [{
     videoId: "2cZ_EFAmj08",
@@ -196,6 +262,24 @@ function transitionToMedia() {
     mediaLocal.style.display = "block";
 }
 
+// The Functionality for generating a set of cards
+function generateTwentyFour() {
+    var twentyFourIndex = Math.floor(Math.random() * twentyFour.length);
+    for (let liveIndex = 0; liveIndex < 4; liveIndex++) {
+        // If twentyFourindex exceeds length reset to 0
+        if (twentyFourIndex == twentyFour.length) {
+            twentyFourIndex = 0;
+        }
+        $(`#sevenImg${liveIndex}`).attr("src", twentyFour[twentyFourIndex].tfThumbnail)
+        $(`#sevenImg${liveIndex}`).attr("alt", twentyFour[twentyFourIndex].tfAlt)
+        $(`#sevenTitle${liveIndex}`).text(twentyFour[twentyFourIndex].tfTitle);
+        $(`#sevenDescription${liveIndex}`).text(twentyFour[twentyFourIndex].tfDescription);
+        $(`sevenLink${liveIndex}`).attr("href", `https://www.youtube.com/watch?v=${twentyFour[twentyFourIndex].tfVideoId}`);
+        twentyFourIndex++;
+    }
+}
+
+
 $(document).ready(function () {
     $('.sidenav').sidenav();
 });
@@ -252,11 +336,21 @@ $("#Video-Game-button").on("click", function (event) {
     genreCall(videogameBands);
 })
 
+// Click Event for the 24/7 cards May need to be tweaked
+$(".card-action").on("click", function (event) {
+    event.preventDefault();
+    window.location.href = $(this).a.attr("href")
+})
+
 // Trouble Video Functionality (Need to Add $("#trouble-video-button").attr("href", videogameProblem); to search function)
 $("#trouble-video-button").on("click", function (event) {
     event.preventDefault();
     window.location.href = $(this).attr("href")
 })
+
+// Functions to be run on startup
+
+generateTwentyFour();
 
 //=========================================================================================
 //Mediaplayer script
