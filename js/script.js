@@ -25,18 +25,6 @@ var artistWebpage;
 // Live now 24/7 Stations
 var twentyFour = [
     {
-        tfVideoId: "JEK03 - EzyHk",
-        tfTitle: "REVERE",
-        tfDescription: "REVERE - 24/7 Worship - Live Stream",
-        tfThumbnail: "https://i.ytimg.com/vi/JEK03-EzyHk/hqdefault_live.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBBV6DUvjQubffzaiN1omqyNr67fg",
-        tfAlt: "Religious Congregation"
-    }, {
-        tfVideoId: "u6kdx - Q61l0",
-        tfTitle: "Lewis Bennett",
-        tfDescription: "Roots Reggae Radio - 24/7 Reggae Music",
-        tfThumbnail: "https://i.ytimg.com/vi/u6kdx-Q61l0/hqdefault_live.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLD6c5KADmWxznv8J-LPSEPM_QxXKA",
-        tfAlt: "Boom Box"
-    }, {
         tfVideoId: "5qap5aO4i9A",
         tfTitle: "ChilledCow",
         tfDescription: "Lofi Hip Hop Radio - Beats to relax/study to",
@@ -274,7 +262,8 @@ function generateTwentyFour() {
         $(`#sevenImg${liveIndex}`).attr("alt", twentyFour[twentyFourIndex].tfAlt)
         $(`#sevenTitle${liveIndex}`).text(twentyFour[twentyFourIndex].tfTitle);
         $(`#sevenDescription${liveIndex}`).text(twentyFour[twentyFourIndex].tfDescription);
-        $(`sevenLink${liveIndex}`).attr("href", `https://www.youtube.com/watch?v=${twentyFour[twentyFourIndex].tfVideoId}`);
+        var sendSeven = twentyFour[twentyFourIndex].tfVideoId;
+        $(`#sevenLink${liveIndex}`).attr("href", `https://www.youtube.com/watch?v=${sendSeven}`);
         twentyFourIndex++;
     }
 }
@@ -337,15 +326,15 @@ $("#Video-Game-button").on("click", function (event) {
 })
 
 // Click Event for the 24/7 cards May need to be tweaked
-$(".card-action").on("click", function (event) {
+$(".card-action-link").on("click", function (event) {
     event.preventDefault();
-    window.location.href = $(this).a.attr("href")
+    window.location.href = $(this).attr("href")
 })
 
 // Trouble Video Functionality (Need to Add $("#trouble-video-button").attr("href", videogameProblem); to search function)
 $("#trouble-video-button").on("click", function (event) {
     event.preventDefault();
-    window.location.href = $(this).attr("href")
+    window.location.href = streamLink.attr("href")
 })
 
 // Functions to be run on startup
