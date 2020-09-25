@@ -13,7 +13,8 @@
 <body>
     <nav>
         <div class="nav-wrapper">
-            <a href="#" class="brand-logo">VenU</a>
+            <img src="images/venu-logo.png">
+            <!-- <a href="#" class="brand-logo">VenU</a> -->
             <a href="#" class="sidenav-trigger" data-target="mobile-nav">
                 <i class="material-icons">Menu</i>
             </a>
@@ -62,7 +63,7 @@
                     </div>
                     <div class="card-content z-depth-3">
                         <span class="card-title" id="sevenTitle0">Yung Bae</span>
-                        <p id="sevenDescription0">Lorem ipsum dolor sit amet co praesentium, libero recusandae dolores
+                        <p class="card-description flow-text" id="sevenDescription0">Lorem ipsum dolor sit amet co praesentium, libero recusandae dolores
                             be iusto!</p>
                         <div class="card-action">
                             <a href="" class="card-action-link" id="sevenLink0">Stream Now</a>
@@ -77,7 +78,7 @@
                     </div>
                     <div class="card-content z-depth-3">
                         <span class="card-title" id="sevenTitle1">Yung Bae</span>
-                        <p id="sevenDescription1">Lorem ipsum dolor sit amet co praesentium, libero recusandae dolores
+                        <p class="card-description flow-text" id="sevenDescription1">Lorem ipsum dolor sit amet co praesentium, libero recusandae dolores
                             be iusto!</p>
                         <div class="card-action">
                             <a href="" class="card-action-link" id="sevenLink1">Stream Now</a>
@@ -92,7 +93,7 @@
                     </div>
                     <div class="card-content z-depth-3">
                         <span class="card-title" id="sevenTitle2">Yung Bae</span>
-                        <p id="sevenDescription2">Lorem ipsum dolor sit amet co praesentium, libero recusandae dolores
+                        <p class="card-description flow-text" id="sevenDescription2">Lorem ipsum dolor sit amet co praesentium, libero recusandae dolores
                             be iusto!</p>
                         <div class="card-action">
                             <a href="" class="card-action-link" id="sevenLink2">Stream Now</a>
@@ -107,7 +108,7 @@
                     </div>
                     <div class="card-content z-depth-3">
                         <span class="card-title" id="sevenTitle3">Yung Bae</span>
-                        <p id="sevenDescription3">Lorem ipsum dolor sit amet co praesentium, libero recusandae dolores
+                        <p class="card-description flow-text" id="sevenDescription3">Lorem ipsum dolor sit amet co praesentium, libero recusandae dolores
                             be iusto!</p>
                         <div class="card-action">
                             <a href="" class="card-action-link" id="sevenLink3">Stream Now</a>
@@ -116,22 +117,22 @@
                 </div>
             </div>
         </div>
+
         <!-- Genre Picker -->
         <div class="container">
             <div class="row">
-                <h1>Genres</h1>
+                <div class="blink"><span>Genres</span></div>
             </div>
             <div class="row">
                 <div class="container">
-                    <a class="col s2 btn-small genre-button" id="Rock-button">Rock</a>
-                    <a class="col s2 btn-small genre-button" id="Electronic-button">Electronic</a>
-                    <a class="col s2 btn-small genre-button" id="Jazz-button">Jazz</a>
-                    <a class="col s2 btn-small genre-button" id="Dance-button">Dance</a>
-                    <a class="col s2 btn-small genre-button" id="Classical-button">Classical</a>
-                    <a class="col s2 btn-small genre-button" id="Metal-button">Metal</a>
-                    <a class="col s2 btn-small genre-button" id="Pop-button">Pop</a>
-                    <a class="col s2 btn-small genre-button" id="Hip-Hop-button">Hip-Hop</a>
-                    <a class="col s2 btn-small genre-button" id="Video-Game-button">Video Game</a>
+                    <a class="col s4 btn-small genre-button" id="Rock-button">Rock</a>
+                    <a class="col s4 btn-small genre-button" id="Electronic-button">Electronic</a>
+                    <a class="col s4 btn-small genre-button" id="Jazz-button">Jazz</a>
+                    <a class="col s4 btn-small genre-button" id="Dance-button">Dance</a>
+                    <a class="col s4 btn-small genre-button" id="Classical-button">Classical</a>
+                    <a class="col s4 btn-small genre-button" id="Metal-button">Metal</a>
+                    <a class="col s4 btn-small genre-button" id="Hip-Hop-button">Hip-Hop</a>
+                    <a class="col s4 btn-small genre-button" id="Video-Game-button">Video Game</a>
                 </div>
             </div>
         </div>
@@ -143,7 +144,7 @@
         <div class="container" id="player-container">
             <div class="row">
                 <div class="card-panel col s3 z-depth-3" id="artist-panel">
-                    <h1 id="artist-name">Artist Name</h1>
+                    <h4 id="artist-name">Artist Name</h4>
                     <p class="flow-text" id="artist-yearformed">Lorem ipsum dolor sit amet </p>
                     <p class="flow-text" id="artist-style">Lorem ipsum dolor sit amet </p>
                     <p class="flow-text" id="artist-genre">Lorem ipsum dolor sit amet </p>
@@ -158,14 +159,16 @@
                             allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
                     </div>
+                    <div class="row">
+                        <p class="col s7 flow-text" id="trouble-video-text">Having trouble playing the video?</p>
+                        <a class="btn-small col s2 trouble-button" id="trouble-video-button">Click here</a>
+                    </div>
                 </div>
 
                 <!-- Trouble Video Backup Link -->
+                
                 <div class="container s12" id="video-link">
-                    <div class="row">
-                        <p class="col s5 flow-text" id="trouble-video-text">Having trouble playing the video?</p>
-                        <a class="btn-small col s2 genre-button" id="trouble-video-button">Click here</a>
-                    </div>
+                    
                 </div>
 
             </div>

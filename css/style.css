@@ -5,6 +5,10 @@ h1 {
     color: #c7493a
 }
 
+h4 {
+    color: #c7493a
+}
+
 body {
     background-color: #272727;
 }
@@ -57,11 +61,16 @@ nav .brand-logo {
 .card-content {
     background-color: #000000;
     color: #f6f5f5;
+    height: 13vw;
 }
 
 .card-panel {
     background-color: #000000;
     color: #f6f5f5;
+}
+
+.card-description {
+    height: 5vw;
 }
 
 .card-action-link {
@@ -75,6 +84,23 @@ nav .brand-logo {
     width: auto;
     margin-top: .5vw;
     margin-left: 4vw !important;
+}
+
+.genre-button:hover {
+    background-color:#c7493a;
+    color: black;
+}
+
+.trouble-button {
+    color: #c7493a;
+    background-color: #000000;
+    width: auto;
+    margin-top: .5vw;
+}
+
+.trouble-button:hover {
+    background-color:#c7493a;
+    color: black;
 }
 
 #artist-name {
@@ -121,6 +147,7 @@ nav .brand-logo {
 #trouble-video-text {
     font-size: 1vw;
     width: 17vw;
+    color: #c7493a;
 }
 
 #trouble-video-button {
