@@ -171,6 +171,8 @@ function getData(searchString) {
         
         var videoPlay = `https://www.youtube.com/embed/${videoId}`
         $("#live-feed").attr("src", videoPlay)
+        var videoProblem = `https://www.youtube.com/watch?v=${videoId}`
+        $("#trouble-video-button").attr("href", videoProblem);
         console.log(responseVideo)
 
         $.ajax({
@@ -334,7 +336,7 @@ $(".card-action-link").on("click", function (event) {
 // Trouble Video Functionality (Need to Add $("#trouble-video-button").attr("href", videogameProblem); to search function)
 $("#trouble-video-button").on("click", function (event) {
     event.preventDefault();
-    window.location.href = streamLink.attr("href")
+    window.location.href = $(this).attr("href")
 })
 
 // Functions to be run on startup
