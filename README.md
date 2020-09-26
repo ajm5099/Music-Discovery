@@ -1,6 +1,6 @@
-<!-- # Music-Discovery -->
 # ![VenU Logo](images/venu-logo.png)  
-livesite: https://ajm5099.github.io/Music-Discovery/
+livesite: https://ajm5099.github.io/Music-Discovery/  
+
 ### Authors: 
 Alex Milroy  
 github: https://github.com/ajm5099/
@@ -17,6 +17,7 @@ github: https://github.com/Dguthmann/
 Christopher Wesonga  
 github: https://github.com/ckomodo/
 
+
 ## List of Contents
 
 index.html  
@@ -32,16 +33,24 @@ venu-logo.png
 ## Basic Overview of Project
 VenU is a music-discovery website for fans of live music, for fans to discover new artists and shows.  The search functionality allows you to search for a band and retrieve a performance by said band for the user to enjoy.  There is also currently live broadcasts for the user to browse. In addition as a starting point there are several genres for a new user to experience what certain genres have to offer in musical styling and feeling.  The videos displayed on site are populated with information about the bands provided by the AudioDB API when available.
 
+
 ## User Stories
-AS A person who cannot attend local shows
-I WANT want to watch recorded concerts and shows at home
-<!-- Add more of the like -->
+AS A person who cannot attend local shows  
+I WANT want to watch recorded concerts and shows at home  
+AS A person wanting to find my favorite artist  
+I WANT to be able to search for that band  
+SO THAT I can watch them  
+AS A person who is checking out a new band  
+I WANT to be able to see information about them  
+SO THAT I can learn about them  
+
 
 ## Screenshot of Website
 
-![Site Screenshot](screenshot1.png)
+![Site Screenshot](images/screenshot1.png)
 
-![Site Screenshot](screenshot2.png)
+![Site Screenshot](images/screenshot2.png)
+
 
 ## Resources Used
 
@@ -52,10 +61,12 @@ Aslan Ghodsian help with responsive styling for a more optimized mobile and smal
 CBC News for information on classical pieces for the genre button.  The full article is below.  
 https://www.cbc.ca/music/read/10-pieces-of-classical-music-everyone-should-know-1.4995342
 
+
 ## Further Development Plans
 
 The other suggestion panel was the last main functionality that was desired to add. The youtube api has a different professional aplication of the api but was more prohibitive due to music law and licensing, as the holder would need noted use and a parent organization.  This is more difficult to obtain for a short duration time framed student project.  It also required a designated domain which the team did not have as the site is deployed through gitpages.  For these reasons the desired suggestion functionality and some of the other features of this project are limited by the free youtube api license.
 Competitor apis have a monthly fee and again more prohibitive on the short term student project format for this design meant to showcase ability to create.
+
 
 ## Changelog
 
