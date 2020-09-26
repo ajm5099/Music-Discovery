@@ -54,10 +54,14 @@ SO THAT I can learn about them
 
 ## Resources Used
 
-Joe Rehfuss for aid in project structure. In addition, curation of focus and project direction.  
-Dennis Molloy for help with git merging errors and branch use.  A measured and patient approach to instill basics on team git development.  
-Joanna Preston for help with materialize syntax and suggestions, and an extra set of eyes when working on debugging a functionality.  
-Aslan Ghodsian help with responsive styling for a more optimized mobile and small screen user experience.  
+Joe Rehfuss for aid in project structure. In addition, curation of focus and project direction.
+
+Dennis Molloy for help with git merging errors and branch use.  A measured and patient approach to instill basics on team git development.
+
+Joanna Preston for help with materialize syntax and suggestions, and an extra set of eyes when working on debugging a functionality.
+
+Aslan Ghodsian help with responsive styling for a more optimized mobile and small screen user experience.
+  
 CBC News for information on classical pieces for the genre button.  The full article is below.  
 https://www.cbc.ca/music/read/10-pieces-of-classical-music-everyone-should-know-1.4995342
 
@@ -70,9 +74,14 @@ Competitor apis have a monthly fee and again more prohibitive on the short term 
 
 ## Changelog
 
-2020-09-26: Add fix nav bar layout to reflect current build, add click functionality of home button, creation and writing of readme, create presentation documents.  
-2020-09-25: Find working videos for embedding and artist info for each genre tag,  Create objects for live now objects and genre buttons,  Add functionality of trouble loading video, ajax requests for the genre buttons, add functionality to fill information for genre buttons, styling of trouble button area, styling and size of live cards, adjust size of artist information section, work on screen size accessability.  
-2020-09-24: Build live now cards in html, Build artist information in js, Develop psuedocode of final styling of each major element and feature.  
-2020-09-23: Search Button Functionality, Testing of search button, Test Writing to Iframe, Build title area for media player page, Test Seach Functionality for transition, CSS styling of search container, Building of genre buttons in html.  
-2020-09-22: Creation of basic file structure, Add search bar to index, Add hero image to splash-page and styling, Build Artist information cards in html, Add a video frame and div to html page, Link up index to the js and css files, Add and test youtube api ajax requests, Add protecting settings to github repo.  
+2020-09-26: Add fix nav bar layout to reflect current build, add click functionality of home button, creation and writing of readme, create presentation documents.
+
+2020-09-25: Find working videos for embedding and artist info for each genre tag,  Create objects for live now objects and genre buttons,  Add functionality of trouble loading video, ajax requests for the genre buttons, add functionality to fill information for genre buttons, styling of trouble button area, styling and size of live cards, adjust size of artist information section, work on screen size accessability.
+
+2020-09-24: Build live now cards in html, Build artist information in js, Develop psuedocode of final styling of each major element and feature.
+
+2020-09-23: Search Button Functionality, Testing of search button, Test Writing to Iframe, Build title area for media player page, Test Seach Functionality for transition, CSS styling of search container, Building of genre buttons in html.
+
+2020-09-22: Creation of basic file structure, Add search bar to index, Add hero image to splash-page and styling, Build Artist information cards in html, Add a video frame and div to html page, Link up index to the js and css files, Add and test youtube api ajax requests, Add protecting settings to github repo.
+
 2020-09-19: Basic concept and brain storming session to come up with the concept that would be named VenU.  
