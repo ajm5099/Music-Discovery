@@ -81,10 +81,11 @@ var rockBands = [{
     videoId: "2cZ_EFAmj08",
     artistId: "Heart"
 }, {
-    videoId: "7uAUoz7jimg",
+    videoId: "-daSUCz-IFo",
     artistId: "Chicago"
 }]
 
+// Electronic Bands for the Electronic Genre Button
 var electronicBands = [{
     videoId: "n_LcVqqHSY8",
     artistId: "Lane 8"
@@ -109,6 +110,15 @@ var jazzBands = [{
 }, {
     videoId: "GOKlGlt0Ygg",
     artistId: "grover washington"
+}]
+
+// Dance acts for the Dance button
+var danceBands = [{
+    videoId: "PKuzYXJf1pY",
+    artistId: "Yung Bae"
+}, {
+    videoId: "cuS4mgrLD1M",
+    artistId: "Bassnectar"
 }]
 
 // Classical Pieces for the Classical Button
@@ -314,6 +324,12 @@ $("#Electronic-button").on("click", function (event) {
 $("#Jazz-button").on("click", function (event) {
     event.preventDefault();
     genreCall(jazzBands);
+})
+
+// Event listener for the Dance Button
+$("#Dance-button").on("click", function (event) {
+    event.preventDefault();
+    genreCall(danceBands);
 })
 
 // Event listener for the Classical Button
