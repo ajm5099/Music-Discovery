@@ -252,6 +252,13 @@ function transitionToMedia() {
     mediaLocal.style.display = "block";
 }
 
+function transitionToHome() {
+    var splash = document.querySelector(".splash-page");
+    splash.style.display = "block";
+    var mediaLocal = document.querySelector(".media-page");
+    mediaLocal.style.display = "none";
+}
+
 // The Functionality for generating a set of cards
 function generateTwentyFour() {
     var twentyFourIndex = Math.floor(Math.random() * twentyFour.length);
@@ -276,6 +283,12 @@ $(document).ready(function () {
 });
 
 //events
+
+// Home button
+$(".logo-holder").on("click", function (event) {
+    event.preventDefault();
+    transitionToHome();
+})
 
 $("#search-button").on("click", function (event) {
     event.preventDefault();
