@@ -81,7 +81,7 @@ var rockBands = [{
     videoId: "2cZ_EFAmj08",
     artistId: "Heart"
 }, {
-    videoId: "7uAUoz7jimg",
+    videoId: "-daSUCz-IFo",
     artistId: "Chicago"
 }]
 
